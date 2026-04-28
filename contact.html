@@ -9,13 +9,115 @@
     <link 
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 rel="stylesheet"> 
+<!-- Bootstrap Icons - CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
    
     <!-- Le contenu de la page sera ajoute ici -->
-   
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container-fluid">
+        <a class="navbar-brand">
+        <img src="Image/logo.jpeg" width="50px" height="50px" id="logo">
+            AfriTalent</a>
+         <button class="navbar-toggler" type="button" 
+         data-bs-toggle="collapse" 
+         data-bs-target="#navmenu" 
+         aria-controls="navMenu" 
+         aria-expanded="false" 
+         aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="freelances.html">Freelance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="tarifs.html">Tarifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">A propos</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link " href="index.html#témoignages">blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav> 
+<div class="haut"><h1>Remplissez le formulaire suivant</h1></div>
+    <div ><h3> Veuillez complétez toutes les informations ci-dessous</h3></div>
+    <div>
+      <form action="">
+            <div>
+              <label for="nom">Nom:</label>
+              <input type="text" id="nom" name="nom">
+          </div>
+          <div>
+              <label for="prenom">Prénom:</label>
+              <input type="text" id="prenom" name="prenom">
+          </div>
+          <div>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="" name="">
+          </div>
+          <div>
+              <label for="">Numéro de telephone:</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+221 77 002 23 26">
+          </div>
+          <div><label for="age">Age:</label>
+              <input type="number" id="age" name="age">
+          </div>
+          <div><label for="address">Addresse:</label>
+              <input type="address" id="address" name="address">
+          </div>
+          <div>
+            <label for="subject">Sujet:</label>
+            <select name="sujet" id="sujet">
+            <option value="">Demande de services</option>
+            <option value="">Recrutement de freelances</option>
+            <option value="">Proposition de projet(s)</option>
+            <option value="">Demande d'informations</option>
+            <option value="">Autres</option>
+            </select>
+
+          </div>
+        <div>
+          <label for="message">Message:</label>
+          <input type="textarea">
+        </div>
+        <div>
+            <input type="submit">
+            <button type="submit">valider</button>
+        </div>
+      </form>
+    </div>
+    <div class="haut" id="con"><h2>Vous pouvez nous contactez via</h2>
+      <div id="contact">
+      <a href="mailto:maureenzoungrana@gmail.com"target="_blank">afritalent@gmail.com</a>
+      <a href="tel:+221710073201"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>+221 77 005 31 02</a>
+    </div>
+    </div>
+    
+    <div class="haut"><h2>Notre Localisation</h2></div>
+    <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0"
+    width="100%"
+    height="400">
+
+    </iframe>  
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

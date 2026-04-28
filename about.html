@@ -9,13 +9,231 @@
     <link 
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 rel="stylesheet"> 
+<!-- Bootstrap Icons - CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
    
     <!-- Le contenu de la page sera ajoute ici -->
-  
+     <!-- Navigation bootstrap commune a toutes les pages -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container-fluid">
+        <a class="navbar-brand">
+        <img src="Image/logo.jpeg" width="50px" height="50px" id="logo">
+            AfriTalent</a>
+         <button class="navbar-toggler" type="button" 
+         data-bs-toggle="collapse" 
+         data-bs-target="#navmenu" 
+         aria-controls="navMenu" 
+         aria-expanded="false" 
+         aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="freelance.html">Freelance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="tarifs.html">Tarifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" href="about.html">A propos</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link " href="index.html#témoignages">blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+<section>
+<!--  Notre Histoire  -->
+  <div class="row">
+  <div class="haut" ><h2>Notre Histoire</h2></div>
+  <div class="col">
+    <p class="story">Afritalent est né d’un constat simple : en Afrique, 
+      beaucoup de jeunes talents possèdent des compétences 
+      incroyables en informatique, design, marketing ou rédaction, mais ils ont du mal à trouver des clients.
+       <br>
+      Un jour, un étudiant passionné de développement web remarque que ses amis freelances passent plus de temps
+       à chercher des missions qu’à travailler sur leurs compétences. De l’autre côté, des entreprises et des particuliers
+        ont des projets, mais ne savent pas à qui faire confiance pour les réaliser.
+        <br>
+        C’est ainsi qu’il a eu une idée : créer une plateforme qui connecte directement les freelances et les clients,
+         de manière simple, rapide et sécurisée.
+         <br>
+         Après plusieurs mois de travail, de tests et d’améliorations, Afritalent voit le jour. Le site permet désormais : </p>
+         <ul id="sto">
+          <li>Aux freelances de créer leur profil et proposer leurs services</li>
+          <li>Aux entreprises de publier leurs projets</li>
+          <li>Et aux deux parties de collaborer facilement</li>
+         </ul>
+         <p class="story">
+          Aujourd’hui, Afritalent continue de grandir avec un objectif clair : valoriser les talents africains et 
+         faciliter l’accès aux opportunités numériques.
+         </p>
+   
+  </div>
+ <div class="col"> <img src="Image/acceuil.jpeg" alt="" class="im"></div>
+  </div>
+</section>
+<section>
+<!--  L'équipe -->
+  <div class="haut"><h2>Quelques Membres de L'équipe</h2> </div>  
+  <!-- Presentation avec des cartes bootstrap comme les freelances -->
+   <div class="row">
+    <div class="card col">
+      <img src="Image/Karimba.jpeg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">
+             Karim Ba
+          <h6>Responsable Marketing Digital</h6>
+         </h4>
+         <p class="card-text">
+            Karim gère la communication du site. Il s’occupe des
+            réseaux sociaux, des campagnes publicitaires et de la promotion pour attirer des freelances et des clients
+          <br>
+         <a href="http://tel: +221710073201" target="_blank">
+          <i class="bi bi-telephone-fill"></i>                   
+         +221 71 287 13 17 </a>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-primary">Suivez moi</a>
+        <br>
+        <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal 
+        </p>
+    </div>
+   </div>
+   <div class="card col">
+      <img src="Image/Aichasow.jpeg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">
+            Aïcha Sow
+          <h6>UX/UI Designer</h6>
+         </h4>
+         <p class="card-text">
+          Aïcha conçoit le design du site. 
+          Elle travaille sur l’apparence, les couleurs et l’expérience utilisateur pour rendre Afritalent simple et agréable à utiliser 
+          <br>
+         <a href="http://tel: +221710073201" target="_blank">
+          <i class="bi bi-telephone-fill"></i>                   
+         +221 78 885 12 16 </a> <br>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-primary">Suivez moi</a>
+        <br>
+          <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal 
+        </p>
+    </div>
+   </div>
+   <div class="card col">
+      <img src="Image/moussadiop.jpeg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">
+            Moussa Diop 
+          <h6>Développeur Full Stack</h6>
+         </h4>
+         <p class="card-text">
+            Moussa s’occupe de la création et de la maintenance du site web. 
+            Il améliore les fonctionnalités et corrige les bugs pour assurer une plateforme rapide et fiable 
+          <br>
+         <a href="http://tel: +221710073201" target="_blank">
+           <i class="bi bi-telephone-fill"></i>                 
+         +221 78 225 13 16 </a> <br>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-primary">Suivez moi</a>
+        <br>
+            <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal 
+        </p>
+    </div>
+   </div>
+   <div class="card col">
+      <img src="Image/fatoundiagne.jpeg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">
+            Fatou Ndiaye
+          <h6> Community Manager</h6>
+         </h4>
+         <p class="card-text">
+            Fatou anime la communauté Afritalent. Elle répond aux utilisateurs, 
+            gère les messages et veille à maintenir une bonne ambiance sur la plateforme
+          <br>
+         <a href="http://tel: +221710073201" target="_blank">
+          <i class="bi bi-telephone-fill"></i>                  
+         +221 78 625 21 19</a> <br>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-primary">Suivez moi</a>
+        <br>
+          <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal 
+        </p>
+    </div>
+   </div>
+  </div>
+</section>
+<section>
+<!--  Nos valeurs -->
+  <div class="haut"><h2>Nos Valeurs</h2></div>
+  <div>
+    <i class="bi bi-lightbulb"></i>
+    <h3>Innovation</h3>
+    <p>Nous utilisons les nouvelles technologies pour améliorer constamment la plateforme</p>
+  </div>
+  <div>
+    <i class="bi bi-globe"></i>
+    <h3>Accessibilité</h3>
+    <p>Afritalent est simple à utiliser et ouvert à tous, partout et à tout moment.</p>
+  </div>
+  <div>
+    <i class="bi bi-people-fill"></i>
+    <h3>Communauté</h3>
+    <p>Nous créons un espace où freelances et clients peuvent se connecter et collaborer facilement.</p>
+  </div>
+  <div>
+    <i class="bi bi-trophy"></i>
+    <h3>Excellence</h3>
+    <p>Nous visons la qualité dans chaque service pour garantir les meilleurs résultats.</p>
+  </div>
+</section>
+<section>
+  <!-- Chiffres clés -->
+   <div class="haut"><h2>Chiffres clés</h2></div>
+   <!-- Grid avec bootstrap -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div><i class="bi bi-people"></i></div>
+          <h3></h3>
+          <p> freelances actifs sur cette plateforme</p>
+        </div>
+        <div class="col">
+          <div><i class="bi bi-briefcase"></i></div>
+          <h3></h3>
+          <p>Entreprises partenaires</p>
+        </div>
+        <div class="col">
+          <div><i class="bi bi-check2-square"></i></div>
+          <h3></h3>
+          <p>missions réalisées avec succès</p>
+        </div>
+        <div class="col">
+          <div><i class="bi bi-star"></i></div>
+          <h3></h3>
+          <p>taux de stisfaction client</p>
+        </div>
+        <div class="col">
+          <div></div>
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+   
+</section>
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
