@@ -14,7 +14,7 @@ rel="stylesheet">
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
+<body class="form"> 
    
     <!-- Le contenu de la page sera ajoute ici -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -56,34 +56,34 @@ rel="stylesheet">
     </div>
   </div>
 </nav> 
-<div class="haut"><h1>Remplissez le formulaire suivant</h1></div>
-    <div ><h3> Veuillez complétez toutes les informations ci-dessous</h3></div>
-    <div>
+  <div class="glass">
+    <div class="container">
+          <div ><h3> Complétez toutes les informations ci-dessous :</h3></div>
       <form action="">
             <div>
-              <label for="nom">Nom:</label>
+              <label for="nom">Nom :</label>
               <input type="text" id="nom" name="nom">
           </div>
           <div>
-              <label for="prenom">Prénom:</label>
+              <label for="prenom">Prénom :</label>
               <input type="text" id="prenom" name="prenom">
           </div>
           <div>
-              <label for="mail">E-mail:</label>
+              <label for="mail">E-mail :</label>
               <input type="email" id="" name="">
           </div>
           <div>
-              <label for="">Numéro de telephone:</label>
-              <input type="tel" id="telephone" name="telephone" placeholder="+221 77 002 23 26">
+              <label for="">Téléphone :</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00">
           </div>
-          <div><label for="age">Age:</label>
+          <div><label for="age">Age :</label>
               <input type="number" id="age" name="age">
           </div>
-          <div><label for="address">Addresse:</label>
+          <div><label for="address">Addresse    :</label>
               <input type="address" id="address" name="address">
           </div>
           <div>
-            <label for="subject">Sujet:</label>
+            <label for="subject">Sujet :</label>
             <select name="sujet" id="sujet">
             <option value="">Demande de services</option>
             <option value="">Recrutement de freelances</option>
@@ -91,33 +91,81 @@ rel="stylesheet">
             <option value="">Demande d'informations</option>
             <option value="">Autres</option>
             </select>
-
           </div>
-        <div>
-          <label for="message">Message:</label>
-          <input type="textarea">
-        </div>
-        <div>
-            <input type="submit">
-            <button type="submit">valider</button>
-        </div>
-      </form>
+          <div>
+            <label for="message">Message :</label>
+            <textarea name="message" id=""></textarea>
+          </div>
+          <div>
+              <button type="submit">valider</button>
+          </div>
+        </form>
+      </div>
+  <div id="con"><h3>Vous pouvez nous contactez via :</h3>
+    <div id="contact">
+      <ul>
+        <li><a href="mailto:maureenzoungrana@gmail.com"target="_blank"><i class="bi bi-envelope-at-fill"></i> afritalent@gmail.com</a></li>
+        <li><a href="tel:+221710073201"><i class="bi bi-telephone-fill"></i> +221 77 005 31 02</a></li>
+      </ul>
     </div>
-    <div class="haut" id="con"><h2>Vous pouvez nous contactez via</h2>
-      <div id="contact">
-      <a href="mailto:maureenzoungrana@gmail.com"target="_blank">afritalent@gmail.com</a>
-      <a href="tel:+221710073201"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg>+221 77 005 31 02</a>
-    </div>
-    </div>
-    
-    <div class="haut"><h2>Notre Localisation</h2></div>
-    <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0"
+    <div id="loc">
+      <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0"
     width="100%"
-    height="400">
-
+    height="300px">
     </iframe>  
+    </div>
+  </div>
+  </div>
+  <footer>
+      <!-- colonne de bootstrap issu de la documentation -->
+      <div class="container text-center">
+        <div class="row ">
+          <div class="col">
+             <ul id="lo">
+              <li><img src="Image/logo.jpeg"width="90px" height="90px" id="logo" alt=""></li>
+             <li><h3>AfriTalent</h3></li>
+             </ul>
+          </div>
+         <div class="col"> 
+          <h2>Trouvez le freelance idéal pour votre projet</h2>
+          <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>                 <!-- 1:Afritalent + description courte -->  
+          </div>
+          <div class="col"> 
+            <h2>Liens utiles</h2>                 <!-- 2:  Liens utiles  -->
+            <ul>
+              <li><a href="tarifs.html">FAQ</a></li>
+              <li><a href="freelances.html">Freelances</a></li>
+            </ul>
+          </div>
+          <div class="col">                  <!--3:  Ressources  -->  
+            <h2>Ressources</h2>
+            <ul>
+              <li><a href="https://www.youtube.com">Tutoriel</a></li>
+              <li><a href="https://www.google.com">Documentation</a></li>
+              <li><a href="contact.html">Continuer</a></li>
+            </ul>
+          </div>
+          <div class="col"> 
+            <h2>Contact</h2>                  <!-- 4:  Contact  -->
+           <ul>                    <!--  logo des app via bootstrap -->
+              <li><a href="https://wa.me/221710073201"target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a></li>                      
+              <li><a href="https://www.twitter.com"target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a></li>
+              <li><a href="https://www.instagram.com/maureen.linaelle"target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a></li>
+              <li><a href="https://www.tiktok.com/@maureen_linaelle"target="_blank">
+                <i class="bi bi-tiktok"></i>
+              </a></li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+     </footer>
+    
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

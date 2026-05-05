@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* :root est un selecteur spéciale qui represente l'element racine de la page html(<html>) */
+:root{
+    /* palette de couleur */
+    --primary-color: #bbd8fe ;
+    --second-color: rgb(30, 58, 95);
+    --third-color: rgb(124, 138, 157);
+    --fourth-color:#93C5FD;
+    /* police */
+    --font-size: 16px;
+    --font-title: roboto slab;
+    --font-text: playfair display;
+}
+/* couleur d'arrière plan */
+body{
+    background: rgb(224, 239, 251);
+}
+/* style du logo */
+#logo{
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* modification de la navbar */
+#main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.bg-dark {
+  --bs-dark-rgb: 30, 58, 95;
+}
+.navbar-brand{
+    color: white;
+    font-family: var(--font-text);
+   
+}
+.navbar-nav{
+    .nav-link{
+        color: white;
+        font-family: var(--font-text); 
+    }
+    .nav-link.active{
+        color: #93C5FD ;
+        border-bottom: solid 2px #93C5FD  ;
+    }
+}
+#hero { 
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.545)),url("../Image/acceuil.jpeg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    color: var(--primary-color);
+    font-family: var(--font-title);
+    font-size: 50px;
+    h1{
+        font-size: 60px;
+        font-family: var(--font-title);
+        margin-bottom: 30px;
+    }
+    h3{
+        font-family: var(--font-text);
+        font-size: 40px;
+    }
+    a{
+       border: solid var(--second-color);
+        background: var(--third-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-family: var(--font-text);
+        font-size:35px;
+
+    } 
+    ul{
+        list-style: none;
+        display: flex;
+        margin-top: 100px;
+   }
+    .container{
+        font-size: 30px;
+        margin-top: 150px;
+    }  
+}
+/* en tete commune a toute les pages */
+.haut{
+    border: solid var(--second-color);
+    background: var(--second-color);
+    color: white;
+    font-family: var(--font-title);
+    text-align: center;
+    /* margin-top: 20px; */
+}
+/* bouton cta */
+#cta{
+    border: solid var(--second-color);
+    background: var(--second-color);
+    color: var(--primary-color);
+    text-align: center;
+    height: 20vh;
+}
+#cta h2{
+    font-family: var(--font-title);
+    color: white;
+}
+#cta p{
+    font-family: var(--font-text);
+    font-size: var(--font-size);
+}
+#cta div a{
+    border: solid var(--third-color);
+    background: var(--third-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: var(--font-text);
+    padding: 5px;
+}
+/* BAS DE PAGE */
+footer{
+    height: 32vh;
+    background: var(--second-color);
+    color: white;
+    margin-top: 20px;
+    font-family: var(--font-title);
+    ul{
+    list-style: none;
+    }
+}
+#lo{
+    border-radius: 50%;
+}
+footer ul a{
+    text-decoration: none;
+    color: var(--primary-color);    
+}
+/* page contact */
+/* style du formulaire */
+.glass{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    padding: 80px;
+    gap: 60px;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),url('../Image/form.jpeg');
+}
+.form{
+    .container{
+        color: var(--primary-color);
+        backdrop-filter: blur(30px);
+        border-radius: 15px;
+        h3{
+            font-family: var(--font-text);
+            margin-bottom: 70px;
+            text-align: center;
+            font-size: 40px;
+        }
+        form{
+            width: 500px;
+            display: block;  /*prandre toute la largeur dispo*/
+            margin: 20px auto ;
+            div{
+                text-align: center;
+                display: flex;
+                justify-content: space-between; 
+                margin-bottom:20px;
+                color: var(--primary-color);
+                font-family: var(--font-text);
+                font-size: 22px;
+                input, select, textarea{
+                    width: 12em;
+                    height: 5vh;
+                    border: none;
+                    border-radius: 10px;
+                }
+                button{
+                    font-family: var(--font-text);
+                    font-weight: bold; /*texte en gras*/
+                    font-size: 22px;
+                    width: 6em;
+                    height: 5vh;
+                    border-radius: 10px;
+                    display: block;
+                    margin: 20px auto;
+                    cursor: pointer;
+                    color: white;
+                    background: var(--third-color);
+                }
+            }    
+        }
+
+    }
+}
+
+/*  style du mail et du numero */
+#con{
+    width: 500px;
+    height: 100vh;
+     color: var(--primary-color);
+     text-align: center;
+     li{
+        list-style: none;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    h3{
+        font-family: var(--font-text);
+        margin-bottom: 70px;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+#contact a{
+    text-decoration: none;
+    font-family: var(--font-text);
+    border: solid var(--third-color);
+    background: var(--third-color);
+    border: solid var(--third-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: var(--font-text);
+    padding: 5px;
+    color: white;
+    margin-bottom: 25px;
+    
+}
+iframe{
+    margin-top: 120px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* about pour l'histoire */
+#story{
+    height: 90vh;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: var(--font-text);
+    overflow: hidden;
+    img{
+        object-fit: cover;
+    }
+    li{
+        list-style: none;
+    }
+
+    .haut{
+        margin-top: 52px;
+    }
+}
+#sto {
+    font-family: var(--font-text);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.col .im{
+    height: 90vh;
+    width: 800px;
+}
+#presentation .card{
+    margin-left: 10px;
+    height: 80vh;
+    .card-body{
+        width:250px;
+        margin: 20px auto;
+    }
+}
+/* Tarifs */
+/* modification des plans */
+#plan .col{
+    border: solid var(--third-color);
+    background-color: var(--fourth-color);
+    color: white;
+    font-family: var(--font-text);
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 40px;
+    height: 50vh;
+    margin-bottom: 20px;
+}
+#plan a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--third-color);
+    border: solid var(--third-color);
+    border-radius: 20px;
+}
+.tar{
+    list-style: none;
+}
+/* modification de l'accordion */
+.accordion-button{
+    border: solid var(--third-color);
+    background-color: var(--fourth-color);
+    color: white;
+    font-family: var(--font-text);
+}
+.accordion-body{
+     border: solid var(--primary-color);
+    background-color: var(--third-color);
+    color: white;
+    font-family: var(--font-text);
+}
+/* les cartes */
+ .card{
+     background: var(--fourth-color);
+     text-align: center;
+     width:  350px  ;
+     height: 80vh; 
+     margin-top: 60px;
+     border-radius: 12px;
+        
+    img{
+        margin: 20px auto ;
+        width: 150px;
+        height: 25vh;
+        border-radius: 50%;
+        object-fit: cover;  /*evite que l'image soit déformée */
+    }
+        .card-body{
+                border-radius: 12px;
+                margin-top: 6px;
+                background-color: var(--fourth-color);
+                border: double var(--third-color);
+                color: white;
+                font-family: var(--font-text);
+                font-size: 15px;
+                margin-right: 6px;
+                margin-left: 8px;
+                margin-bottom: 6px;   
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: var(--font-text);
+                }
+                .btn{
+                    border: solid var(--third-color);
+                    background-color: var(--third-color);
+                    color: white;
+                    font-family: var(--font-text);
+                }
+                 }
+       
+  }
