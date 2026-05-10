@@ -24,8 +24,9 @@ body{
     object-fit: cover;
 }
 /* modification de la navbar */
-#main-nav{
+.navbar{
     position: fixed;
+    z-index: 1000; /*la navbar est au dessus*/
     top: 0;
     left: 0;
     width: 100%;
@@ -49,6 +50,7 @@ body{
     }
 }
 #hero { 
+    margin-top: 75px;
     height: 100vh;
     align-items: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.545)),url("../Image/acceuil.jpeg");
@@ -58,27 +60,35 @@ body{
     background-position: center;
     object-fit: cover;
     color: var(--primary-color);
+    text-align: center;
     font-family: var(--font-title);
     font-size: 50px;
     h1{
         font-size: 60px;
         font-family: var(--font-title);
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-top: 50px;
     }
     h3{
         font-family: var(--font-text);
         font-size: 40px;
     }
+    ul{
+        margin-left: 280px;
+    }
     a{
-       border: solid var(--second-color);
         background: var(--third-color);
         color: white;
         text-decoration: none;
         border-radius: 10px;
         font-family: var(--font-text);
         font-size:35px;
-
+        margin-left: 100px;
+        
     } 
+    a:hover{
+           box-shadow:0 4px 6px white;
+    }
     ul{
         list-style: none;
         display: flex;
@@ -86,7 +96,7 @@ body{
    }
     .container{
         font-size: 30px;
-        margin-top: 150px;
+        margin-top: 130px;
     }  
 }
 /* en tete commune a toute les pages */
@@ -105,6 +115,7 @@ body{
     color: var(--primary-color);
     text-align: center;
     height: 20vh;
+   
 }
 #cta h2{
     font-family: var(--font-title);
@@ -123,9 +134,12 @@ body{
     font-family: var(--font-text);
     padding: 5px;
 }
+#cta div a:hover{
+        box-shadow:0 4px 6px white;
+}
 /* BAS DE PAGE */
 footer{
-    height: 32vh;
+    height: 28vh;
     background: var(--second-color);
     color: white;
     margin-top: 20px;
@@ -137,18 +151,75 @@ footer{
 #lo{
     border-radius: 50%;
 }
-footer ul a{
-    text-decoration: none;
-    color: var(--primary-color);    
+footer ul{
+     a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    a:hover{
+        color: white;       
+    }
+}
+/* les cartes */
+ .card{
+    background: var(--fourth-color);
+    text-align: center;
+    width:  350px  ;
+    height: 87vh; 
+    margin-top: 60px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1; /*  pour que la navbar soit au dessus*/
+    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+    cursor: pointer;      
+    img{
+        margin: 20px auto ;
+        width: 150px;
+        height: 25vh;
+        border-radius: 50%;
+        object-fit: cover;  /*evite que l'image soit déformée */
+    }
+        .card-body{
+                border-radius: 12px;
+                margin-top: 6px;
+                background-color: var(--fourth-color);
+                border: double var(--third-color);
+                color: white;
+                font-family: var(--font-text);
+                font-size: 18px;
+                margin-right: 6px;
+                margin-left: 8px;
+                margin-bottom: 6px;
+               
+                a{
+                    margin-top: auto;
+                    text-decoration: none;
+                    color: black;
+                    font-family: var(--font-text);
+                }
+                .btn{
+                    border: solid var(--third-color);
+                    background-color: var(--third-color);
+                    color: white;
+                    font-family: var(--font-text);
+                    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+                }
+                .btn:hover{
+                    color: white;
+                    transform: scale(1.05); /* Agrandir un element au toucher*/
+                }
+                 }
+  }
+.card:hover{
+    transform: scale(1.03); /* Agrandir un element au toucher*/   
 }
 /* page contact */
 /* style du formulaire */
 .glass{
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
+    display: grid;   /*sert à créer des mises en page en lignes et colonnes*/
+    grid-template-columns: 1.2fr 0.8fr;  /*cree deux colonnes de taille différentes*/
     padding: 80px;
-    gap: 60px;
+    gap: 60px;  /*espace vertical */
     align-items: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),url('../Image/form.jpeg');
 }
@@ -180,6 +251,11 @@ footer ul a{
                     height: 5vh;
                     border: none;
                     border-radius: 10px;
+                    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+                }
+                input:hover, select:hover, textarea:hover{
+                    transform: scale(1.1); /* Agrandir un element au toucher*/
+                    box-shadow: 2px 4px 4px 2px var(--primary-color);
                 }
                 button{
                     font-family: var(--font-text);
@@ -193,18 +269,22 @@ footer ul a{
                     cursor: pointer;
                     color: white;
                     background: var(--third-color);
+                    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+                }
+                button:hover{
+                    transform: scale(1.05); /* Agrandir un element au toucher*/
+                    box-shadow: 2px 4px 6px white;
                 }
             }    
         }
 
     }
 }
-
 /*  style du mail et du numero */
 #con{
     width: 500px;
     height: 100vh;
-     color: var(--primary-color);
+    color: var(--primary-color);
      text-align: center;
      li{
         list-style: none;
@@ -230,7 +310,9 @@ footer ul a{
     padding: 5px;
     color: white;
     margin-bottom: 25px;
-    
+}
+#contact a:hover{
+    box-shadow: 0 4px 6px white;
 }
 iframe{
     margin-top: 120px;
@@ -267,10 +349,11 @@ iframe{
 }
 #presentation .card{
     margin-left: 10px;
-    height: 80vh;
+    height: 85vh;
+    margin-bottom: 10px;
     .card-body{
         width:250px;
-        margin: 20px auto;
+        margin: 4px auto;
     }
 }
 /* Tarifs */
@@ -281,11 +364,38 @@ iframe{
     color: white;
     font-family: var(--font-text);
     font-size: 18px;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 80px;
+    margin-left: 30px;
     border-radius: 40px;
     height: 50vh;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+}
+#plan #pro{
+    margin-top: 40px;
+    height: 60vh;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/ 
+    div{
+        margin: 10px auto;
+        background: var(--second-color);
+        width: 125px;
+        height: 6vh;
+        margin-bottom: 10px;
+        border-radius: 40px;
+        left: 35%;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;        
+        font-weight: bold;
+    }
+}
+#plan #pro:hover{
+     transform: scale(1.10); /* Agrandir un element au toucher*/
+}
+#plan .col:hover{
+    transform: scale(1.05); /* Agrandir un element au toucher*/    
 }
 #plan a{
     text-decoration: none;
@@ -293,6 +403,9 @@ iframe{
     background-color: var(--third-color);
     border: solid var(--third-color);
     border-radius: 20px;
+}
+#plan a:hover{
+    box-shadow: 0 4px 6px white;
 }
 .tar{
     list-style: none;
@@ -310,44 +423,107 @@ iframe{
     color: white;
     font-family: var(--font-text);
 }
-/* les cartes */
- .card{
-     background: var(--fourth-color);
-     text-align: center;
-     width:  350px  ;
-     height: 80vh; 
-     margin-top: 60px;
-     border-radius: 12px;
-        
-    img{
-        margin: 20px auto ;
-        width: 150px;
-        height: 25vh;
-        border-radius: 50%;
-        object-fit: cover;  /*evite que l'image soit déformée */
+  /* section témoignages */
+#tem{
+    #témoignages{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
     }
-        .card-body{
-                border-radius: 12px;
-                margin-top: 6px;
-                background-color: var(--fourth-color);
-                border: double var(--third-color);
-                color: white;
-                font-family: var(--font-text);
-                font-size: 15px;
-                margin-right: 6px;
-                margin-left: 8px;
-                margin-bottom: 6px;   
-                a{
-                    text-decoration: none;
-                    color: black;
-                    font-family: var(--font-text);
-                }
-                .btn{
-                    border: solid var(--third-color);
-                    background-color: var(--third-color);
-                    color: white;
-                    font-family: var(--font-text);
-                }
-                 }
-       
-  }
+    .haut{
+        margin-top: 40px;
+    }
+    .carousel{
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        margin: 20px auto;
+        height: 80vh;
+    }
+}
+
+/* section comment ca marche */
+#fonction{
+     
+    margin-bottom: 20px;
+    .haut{
+        margin-bottom: 30px;
+    }
+}
+#bento{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 220px 220px;
+    gap: 20px;
+   
+    #tall{
+        grid-row: span 2; /*prise de deux lignes en hauteur*/
+    }
+    #long{
+        grid-column: span 2;  /*prise de deux colonnes en largeur*/
+    }
+}
+.bento-item {
+        border: solid var(--second-color);
+        padding: 30px;
+        flex-direction: column;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
+        background-color: var(--fourth-color);
+        justify-content: center;
+        cursor: pointer;
+        div{
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+         h3{
+            font-family: var(--font-title);
+             margin-bottom: 15px;
+        }
+        p{
+            font-family: var(--font-text);
+            line-height: 1.6; /*l’espace vertical entre les lignes du paragraphe*/
+        }
+}
+
+.bento-item:hover {
+         transform: scale(1.05); /* Agrandir un element au toucher*/
+}
+#services{
+    .container{
+         margin-bottom: 10px;
+    }
+    .card{
+        cursor: pointer;
+        height: 50vh;
+        text-align: center;
+        transition: transform 0.3s ease;   /*rend le mouvement plus fuid avec le transform scale*/
+    }
+    .card:hover{
+        transform: scale(1.1);   /* Agrandir un element au toucher*/
+        box-shadow: 4px 6px 4px 6px var(--primary-color);
+    }
+}
+/* about : nos valeurs */
+#valeurs{
+    text-align: center;
+    div:not(.haut) {
+        border-radius: 25px;
+        margin: 20px auto;
+        border: solid var(--second-color);
+        background: var(--fourth-color);
+        color: white;
+        width: 500px;
+        transition: transform 0.3s ease;  /*rend le mouvement plus fuid avec le transform scale*/
+        cursor: pointer;
+    }
+    div:not(.haut):hover{   
+        transform: scale(1.05); /* Agrandir un element au toucher*/
+    }
+}
