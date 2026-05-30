@@ -98,6 +98,9 @@ body.dark-mode .bg-dark{
     font-size: 28px;
     color: var(--second-color);
 }
+.navbar.scrolled .navbar-toggler::before{
+    color: white;
+} 
 #theme-toggle{
     border-radius: 10px;
     background: var(--bs-dark-rgb);
@@ -224,9 +227,24 @@ footer ul{
         color: white;       
     }
 }
+#copyright{
+    height: 5%;
+    background: var(--fourth-color);
+}
 /* freelances */
 #freelance{
     margin-top: 30px;
+    .card{
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+        transition-delay: calc(var(--i) * 0.1s); /* délai décalé grâce à --i */
+    }
+    /* État visible */
+    .card.carte-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* les cartes */
  .card{
@@ -238,8 +256,8 @@ footer ul{
     border-radius: 12px;
     position: relative;
     z-index: 1; /*  pour que la navbar soit au dessus*/
-    transition: transform 0.3s ease;     /*rend le mouvement plus fuid avec le transform scale*/
-    cursor: pointer;      
+    transition: transform 0.3s ease;    /* rend le mouvement plus fuid avec le transform scale */
+    cursor: pointer;    
     img{
         margin: 20px auto ;
         width: 150px;
@@ -278,9 +296,9 @@ footer ul{
                 }
                  }
   }
-.card:hover{
-    transform: scale(1.03); /* Agrandir un element au toucher*/   
-}
+.card:hover{ 
+    transform: scale(1.03); /*Agrandir un element au toucher*/   
+ }
 /* page contact */
 /* style du formulaire */
 .glass{
@@ -863,3 +881,17 @@ iframe{
   transform: translateY(0) scale(1); /*donne le taille normale et */
   pointer-events: auto; /*on peut cliquer sur l'élément*/
 }
+/* Les sections qui apparaissent en fondu (fade-in) */
+/* S'applique à toutes les balises <section> du site */
+section {
+  opacity: 0;
+  transform: translateY(30px); /* Léger décalage vers le bas */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; /* Optimise les performances*/
+}
+/* Classe ajoutée par JavaScript quand la section est visible */
+section.fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
