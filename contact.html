@@ -63,43 +63,51 @@ rel="stylesheet">
   <div class="glass" id="top">
     <div class="container">
       <div ><h3> Complétez toutes les informations ci-dessous :</h3></div>
-      <form action="">
+      <form id="formulaire">
             <div>
-              <label for="nom">Nom :</label>
+              <label for="nom">Nom</label>
               <input type="text" id="nom" name="nom">
+              <span class="error" id="nomError"></span>
           </div>
           <div>
-              <label for="prenom">Prénom :</label>
+              <label for="prenom">Prénom</label>
               <input type="text" id="prenom" name="prenom">
+              <span class="error" id="prenomError"></span>
           </div>
           <div>
-              <label for="mail">E-mail :</label>
-              <input type="email" id="" name="">
+              <label for="mail">E-mail</label>
+              <input type="email" id="email" name="email">
+              <span class="error" id="emailError"></span>
           </div>
           <div>
-              <label for="">Téléphone :</label>
-              <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00">
+              <label for="">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00" arial-live="polite">
+              <span class="error" id="phoneError"></span>
           </div>
-          <div><label for="age">Age :</label>
-              <input type="number" id="age" name="age">
+          <div><label for="age">Age</label>
+              <input type="number" id="age" name="age" min="1" max="120">
+              <span class="error" id="ageError"></span>
           </div>
-          <div><label for="address">Addresse    :</label>
+          <div><label for="address">Adresse</label>
               <input type="address" id="address" name="address">
+              <span class="error" id="addressError"></span>
           </div>
           <div>
-            <label for="subject">Sujet :</label>
+            <label for="subject">Sujet</label>
             <select name="sujet" id="sujet">
-            <option value="">Demande de services</option>
-            <option value="">Recrutement de freelances</option>
-            <option value="">Proposition de projet(s)</option>
-            <option value="">Demande d'informations</option>
-            <option value="">Autres</option>
+            <option value="services">Demande de services</option>
+            <option value="recrutement">Recrutement de freelances</option>
+            <option value="proposition">Proposition de projet(s)</option>
+            <option value="renseignement">Demande d'informations</option>
+            <option value="autres">Autres</option>
             </select>
+            <span></span>
           </div>
           <div>
-            <label for="message">Message :</label>
-            <textarea name="message" id=""></textarea>
-          </div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <span class="error" id="messageError"></span>
+          </div> 
           <div>
               <button type="submit">valider</button>
           </div>
@@ -113,9 +121,7 @@ rel="stylesheet">
       </ul>
     </div>
     <div id="loc">
-      <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0"
-    width="100%"
-    height="300px">
+      <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0">
     </iframe>  
     </div>
   </div>

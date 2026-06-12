@@ -59,13 +59,24 @@ rel="stylesheet">
     </div>
   </div>
 </nav>
- <!-- Barre de filtrage par catégorie  -->
+<!-- Barre de filtrage par catégorie  -->
+<div id="barre">
+    <ul>
+        <li> <button class="filtre actif" onclick="filtrerFreelances('tous')">Tous</button> </li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Développement Web')">Développement Web</button> </li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Design UI / UX')">Design UI / UX</button> </li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Application Web')">Application Web</button> </li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Création de video')">Création de video</button> </li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Gestion des médias sociaux')">Gestion des médias sociaux</button></li>
+        <li> <button class="filtre" onclick="filtrerFreelances('Rédaction web')">Rédaction web</button></li>
+    </ul>
+  </div>
 <!-- Cartes bootstrap pour les profils -->
 <div class="container" id="freelance">
      <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:0">
-                    <img src="Image/maimounasow.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:0" data-categorie="Développement Web">
+                    <img src="Image/maimounasow.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                            Maïmouna SOW
@@ -90,13 +101,13 @@ rel="stylesheet">
                         <i class="bi bi-star-fill"></i> 
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:1">
-                    <img src="Image/cheickdiop.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:1" data-categorie="Développement Web">
+                    <img src="Image/cheickdiop.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             Cheick Mohammed DIOP
@@ -121,13 +132,13 @@ rel="stylesheet">
                         <i class="bi bi-star"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-2" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:2">
-                    <img src="Image/davidmensah.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:2" data-categorie="Application Web">
+                    <img src="Image/davidmensah.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             David MENSAH
@@ -152,13 +163,13 @@ rel="stylesheet">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-3" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:3">
-                    <img src="Image/kayley.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:3" data-categorie="Design UI / UX">
+                    <img src="Image/kayley.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             Kayley KARAMA
@@ -183,13 +194,13 @@ rel="stylesheet">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-4" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:4">
-                    <img src="Image/amira.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:4" data-categorie="Application Web">
+                    <img src="Image/amira.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             Amira SOME
@@ -214,13 +225,13 @@ rel="stylesheet">
                         <i class="bi bi-star"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-5" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
              </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card"  style="--i:5">
-                    <img src="Image/mirandazongo.jpeg" alt="" class="card-img-top" >
+                    <div class="card"  style="--i:5" data-categorie="Application Web">
+                    <img src="Image/mirandazongo.jpeg" alt="profil" class="card-img-top" >
                     <div class="card-body">
                         <h4 class="card-title">
                             Miranda ZONGO
@@ -246,13 +257,13 @@ rel="stylesheet">
                         <i class="bi bi-star-half"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-6" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:6">
-                    <img src="Image/nathandiarra.jpeg" alt="" class="card-img-top" >
+                <div class="card"  style="--i:6" data-categorie="Création de video">
+                    <img src="Image/nathandiarra.jpeg" alt="profil" class="card-img-top" >
                     <div class="card-body">
                         <h4 class="card-title">
                             Linaëlle DIARRA
@@ -260,7 +271,7 @@ rel="stylesheet">
                         </h4>
                         <p class="card-text">
                             Je réalise des vidéos courtes et captivantes pour YouTube, Instagram et TikTok.
-                          <br>
+                        <br>
                             Spécialités: Montage vidéo, After Effects, Premiere Pro
                             <br>
                             Tarifs: 20000-45000FCFA/h
@@ -277,20 +288,20 @@ rel="stylesheet">
                         <i class="bi bi-star-half"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-7" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" style="--i:7">  
-                    <img src="Image/lindafofana.jpeg" alt="" class="card-img-top">
+                <div class="card" style="--i:7" data-categorie="Gestion des médias sociaux">  
+                    <img src="Image/lindafofana.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             Linda FOFANA
                             <h6>Community Manager & Content Creator</h6>
                         </h4>
                         <p class="card-text">
-                            Gère les réseaux sociaux et crée du contenu engageant pour booster l’audience
+                            Je gère les réseaux sociaux et crée du contenu engageant pour booster l’audience
                           <br>
                             Spécialités: Réseaux sociaux, plan éditorial, storytelling
                             <br>
@@ -308,20 +319,20 @@ rel="stylesheet">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-8" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card"  style="--i:8">
-                    <img src="Image/erlichbado.jpeg" alt="" class="card-img-top">
+                <div class="card"  style="--i:8" data-categorie="Rédaction web">
+                    <img src="Image/erlichbado.jpeg" alt="profil" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">
                             Erlich BADO
                             <H6>Rédacteur Web</H6>
                         </h4>
                         <p class="card-text">
-                            Rédige des articles optimisés SEO pour blogs et sites web
+                            Je rédige des articles optimisés SEO pour blogs et sites web
                             <br>
                             Spécialités: SEO, WordPress, rédaction d’articles
                             <br>
@@ -339,7 +350,7 @@ rel="stylesheet">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star"></i>
                         <br>
-                        <a href="" class="btn btn-primary">Voir le profil</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-9" aria-controls="offcanvasTop">Voir le profil</a>
                     </div>
                 </div>
             </div>
@@ -371,7 +382,6 @@ rel="stylesheet">
           <li><a href="freelances.html">Freelances</a></li>
         </ul>
       </div>
-
       <div class="col-12 col-md-6 col-lg-2">
         <h2>Ressources</h2>
         <ul>
@@ -410,6 +420,276 @@ rel="stylesheet">
   <div id="copyright">
   </div>
 </footer>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-1" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/maimounasow.jpeg" alt="profil">
+    <ul>    
+        <li><h3 id="offcanvasTopLabel">Maimouna SOW</h3></li>
+        <li><P>Front-End Developer</P></li>
+    </ul>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je développe des interfaces web modernes et responsives pour améliorer l’expérience utilisateur
+        <br>
+        Spécialités: HTML, CSS, JavaScript
+        <br>
+        Tarifs: 25000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                 
+            +221 77 001 25 45 </a>
+        <br>
+            <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i> 
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-2" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/cheickdiop.jpeg" alt="profil">
+    <ul>
+        <li> <h3 id="offcanvasTopLabel">Cheick Mohammed DIOP</h3></li>
+        <li> <P>Back-End Developer </P></li>
+    </ul>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je conçois la logique et les systèmes qui permettent aux sites web de fonctionner et gérer les données
+        <br>
+        Spécialités: Node.js, PHP, MySQL 
+        <br>
+        Tarifs: 38500FCFA/h
+                        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                    
+            +221 77 898 56 25 </a>
+            <br>
+            <i class="bi bi-geo-alt-fill"></i> : Dakar, Sénégal
+        </p>
+         <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-3" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/davidmensah.jpeg" alt="profil">
+    <ul>
+        <li> <h3 id="offcanvasTopLabel">David MENSAH</h3></li>
+        <li><p>Full-Strack Developer</p></li>
+    </ul>
+     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je développe des applications web complètes en gérant à la fois le front-end et le back-end
+        <br>
+        Spécialités:JavaScript, API, bases de données 
+        <br>
+        Tarifs:50000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+                <i class="bi bi-telephone-fill"></i>                  
+                +221 78 545 63 23</a>
+            <br>
+             <i class="bi bi-geo-alt-fill"></i>: Saint LOUIS, Sénégal
+        </p>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-4" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+     <img src="Image/kayley.jpeg" alt="profil">
+    <ul>
+        <li><h3 id="offcanvasTopLabel">Kayley KARAMA</h3></li>
+        <li> <p>UI Designer</p></li>
+    </ul>   
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je crée des interfaces visuelles modernes et attractives pour les sites et applications
+        <br>
+        Spécialités:Figma, design d’interface 
+        <br>
+        Tarifs: 23000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                 
+            +221 77 561 15 47 </a>
+        <br>
+            <i class="bi bi-geo-alt-fill"></i>:Dakar ,Sénégal
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-half"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-5" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/amira.jpeg" alt="profil">
+    <ul>
+        <li><h3 id="offcanvasTopLabel">Amira SOME</h3></li>
+        <li><p>Devops Engineer</p></li>
+    </ul>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je gère le déploiement, les serveurs et l’infrastructure des applications web
+        <br>
+        Spécialités: Docker, AWS, CI/CD
+        <br>
+        Tarifs: 65000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                    
+            +221 77 895 63 23 </a>
+        <br>
+        <i class="bi bi-geo-alt-fill"></i>: Dakar, Sénégal
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-6" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/mirandazongo.jpeg" alt="profil">
+    <ul>
+        <li><h3 id="offcanvasTopLabel">Miranda ZONGO</h3></li>
+        <li><p>Web App Developer</p></li>
+    </ul>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je développe des applications web interactives et performantes
+        <br>
+        Spécialités: React, Angular, Node.js
+        <br>
+        Tarifs: 60000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                   
+            +221 78 963 52 41 </a>
+        <br>
+        <i class="bi bi-geo-alt-fill"></i>: Saint LOUIS, Sénégal  
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-half"></i>
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-7" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/nathandiarra.jpeg" alt="profil">
+    <ul>
+        <li><h3 id="offcanvasTopLabel">Linaëlle DIARRA</h3></li>
+        <li><p>Créateur de vidéos</p></li>
+    </ul>    
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je réalise des vidéos courtes et captivantes pour YouTube, Instagram et TikTok.
+        <br>
+        Spécialités: Montage vidéo, After Effects, Premiere Pro
+        <br>
+        Tarifs: 20000-45000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                   
+            +221 77 412 02 31 </a>
+        <br>
+            <i class="bi bi-geo-alt-fill"></i>: Ouagadougou, BF   
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-half"></i>
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-8" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/lindafofana.jpeg" alt="profil">
+    <ul>
+        <li> <h3 id="offcanvasTopLabel">Linda FOFANA</h3></li>
+        <li> <p>Community Manager & Content Creator</p></li>
+    </ul>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je gère les réseaux sociaux et crée du contenu engageant pour booster l’audience
+        <br>
+        Spécialités: Réseaux sociaux, plan éditorial, storytelling
+        <br>
+        Tarifs: 15000-35000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>
+            +221 77 445 56 12 </a>
+        <br>
+        <i class="bi bi-geo-alt-fill"></i>: Bamako, Mali   
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-9" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <img src="Image/erlichbado.jpeg" alt="profil">
+    <ul>
+        <li><h3 id="offcanvasTopLabel">Erlich BADO</h3></li>
+        <li><p>Rédacteur Web</p></li>
+    </ul> 
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">
+        Je rédige des articles optimisés SEO pour blogs et sites web
+        <br>
+        Spécialités: SEO, WordPress, rédaction d’articles
+        <br>
+        Tarifs: 15000-40000FCFA/h
+        <br>
+        <a href="http://tel: +221710073201" target="_blank">
+            <i class="bi bi-telephone-fill"></i>                   
+            +221 71 524 14 21 </a>
+        <br>
+            <i class="bi bi-geo-alt-fill"></i>: Ziguinchor, Sénégal  
+    </p>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+  </div>
+</div>
 <!-- bouton back to top -->
     <button id="back-to-top">
       <a href="#freelance"><i class="bi bi-arrow-up"></i></a>
