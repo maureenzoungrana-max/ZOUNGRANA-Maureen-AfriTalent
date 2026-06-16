@@ -1,251 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent — tarifs</title> 
 
-    <!-- Bootstrap 5 via CDN : feuille de style --> 
-    <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Bootstrap Icons - CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Votre feuille de style personnelle --> 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — tarifs</title>
+
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons - CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
 
-    <!-- Le contenu de la page sera ajoute ici -->
- <nav id="main-nav"class="navbar navbar-expand-lg navbar-dark bg-dark">
-     <div class="container-fluid">
-        <a class="navbar-brand">
-        <img src="Image/logo.jpeg" width="50px" height="50px" id="logo">
-            AfriTalent</a>
-         <!-- Bouton Toggle -->
-         <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
-            <i class="bi bi-sun-fill"></i>
-         </button>
-         <button class="navbar-toggler" type="button" 
-         data-bs-toggle="collapse" 
-         data-bs-target="#navmenu" 
-         aria-controls="navMenu" 
-         aria-expanded="false" 
-         aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
+  <!-- Le contenu de la page sera ajoute ici -->
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="Image/logo.jpeg" alt="logos" class="logo">
+        AfriTalent</a>
+      <!-- Bouton Toggle -->
+      <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <li class="nav-item">
-          <a class="nav-link " href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="freelances.html">Freelance</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="tarifs.html">Tarifs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">A propos</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link " href="index.html#témoignages">blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="contact.html">Contact</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="freelances.html">Freelance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tarifs.html">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="index.html#témoignages">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- plan tarifaire -->
+  <div id="tarif">
+    <div class="haut">
+      <h2>Plan Tarifaire</h2>
+    </div>
+    <div class="container text-center">
+      <div class="row " id="plan">
+        <div class="col">
+          <i class="bi bi-gift"></i>
+          <h3>Plan Gratuit</h3>
+          <h4>0FCFA/mois</h4>
+          <ul class="tar">
+            <li><i class="bi bi-check-lg"></i>Création de profil freelance</li>
+            <li><i class="bi bi-x-lg"></i>Support prioritaire</li>
+            <li><i class="bi bi-check-lg"></i>Accès aux offres de missions</li>
+            <li><i class="bi bi-check-lg"></i>Envoi de propositions limité (5/mois)</li>
+            <li><i class="bi bi-check-lg"></i>Messagerie avec les clients</li>
+            <li><i class="bi bi-check-lg"></i>Mise en avant du profil</li>
+            <li><i class="bi bi-x-lg"></i>Mise en avant du profil</li>
+          </ul>
+          <a href="freelances.html">Commencer gratuitement</a>
+        </div>
+        <div id="pro" class="col">
+          <div><i class="bi bi-award-fill">Recommandé</i></div>
+          <i class="bi bi-briefcase-fill"></i>
+          <h3>Plan Pro</h3>
+          <h4>30000FCFA/mois</h4>
+          <ul class="tar">
+            <li><i class="bi bi-check-lg"></i>Accès illimité aux missions</li>
+            <li><i class="bi bi-check-lg"></i>Propositions illimitées</li>
+            <li><i class="bi bi-check-lg"></i>Messagerie avec les clients</li>
+            <li><i class="bi bi-x-lg"></i>Gestion d’équipe avancée</li>
+            <li><i class="bi bi-check-lg"></i>Profil mis en avant dans les recherches</li>
+            <li><i class="bi bi-check-lg"></i>Badge Freelance Pro</li>
+            <li><i class="bi bi-check-lg"></i>Création de profil freelance</li>
+          </ul>
+          <a href="freelances.html">Passer au Pro</a>
+        </div>
+        <div class="col">
+          <i class="bi bi-building"></i>
+          <h3>Plan Entreprise</h3>
+          <h4>45000FCFA/mois</h4>
+          <ul class="tar">
+            <li><i class="bi bi-check-lg"></i>Publication illimitée de missions</li>
+            <li><i class="bi bi-check-lg"></i> aux meilleurs freelances</li>
+            <li><i class="bi bi-check-lg"></i>Support prioritaire</li>
+            <li><i class="bi bi-x-lg"></i>Version gratuite</li>
+            <li><i class="bi bi-check-lg"></i>Gestion d’équipe</li>
+            <li><i class="bi bi-check-lg"></i>Tableau de bord avancé</li>
+            <li><i class="bi bi-check-lg"></i>Recrutement rapide</li>
+          </ul>
+          <a href="freelances.html">Choisir ce plan</a>
+        </div>
+      </div>
     </div>
   </div>
-</nav>  
-<!-- plan tarifaire -->
- <div id="tarif">
-    <div class="haut"><h2>Plan Tarifaire</h2></div>
- <div class="container text-center">
-   <div class="row " id="plan">
-    <div class="col">
-      <i class="bi bi-gift"></i>
-      <h3>Plan Gratuit</h3>
-      <h4>0FCFA/mois</h4>
-      <p>
-        <ul class="tar">
-          <li><i class="bi bi-check-lg"></i>Création de profil freelance</li>
-          <li><i class="bi bi-x-lg"></i>Support prioritaire</li>
-          <li><i class="bi bi-check-lg"></i>Accès aux offres de missions</li>
-          <li><i class="bi bi-check-lg"></i>Envoi de propositions limité (5/mois)</li>
-          <li><i class="bi bi-check-lg"></i>Messagerie avec les clients</li>
-          <li><i class="bi bi-check-lg"></i>Mise en avant du profil</li>
-          <li><i class="bi bi-x-lg"></i>Mise en avant du profil</li>
-        </ul>
-      </p>
-      <a href="freelances.html">Commencer gratuitement</a>
-    </div>
-    <div id="pro" class="col">
-      <div><i class="bi bi-award-fill">Recommandé</i></div>
-      <i class="bi bi-briefcase-fill"></i>
-      <h3>Plan Pro</h3>
-      <h4>30000FCFA/mois</h4>
-      <p>
-        <ul class="tar">
-          <li><i class="bi bi-check-lg"></i>Accès illimité aux missions</li>
-          <li><i class="bi bi-check-lg"></i>Propositions illimitées</li>
-          <li><i class="bi bi-check-lg"></i>Messagerie avec les clients</li>
-          <li><i class="bi bi-x-lg"></i>Gestion d’équipe avancée</li>
-          <li><i class="bi bi-check-lg"></i>Profil mis en avant dans les recherches</li>
-          <li><i class="bi bi-check-lg"></i>Badge Freelance Pro</li>
-          <li><i class="bi bi-check-lg"></i>Création de profil freelance</li>
-        </ul>
-      </p>
-      <a href="freelances.html">Passer au Pro</a>
-    </div>
-    <div class= "col">
-      <i class="bi bi-building"></i>
-      <h3>Plan Entreprise</h3>
-      <h4>45000FCFA/mois</h4>
-      <p>
-        <ul class="tar">
-          <li><i class="bi bi-check-lg"></i>Publication illimitée de missions</li>
-          <li><i class="bi bi-check-lg"></i> aux meilleurs freelances</li>
-          <li><i class="bi bi-check-lg"></i>Support prioritaire</li>
-          <li><i class="bi bi-x-lg"></i>Version gratuite</li>
-          <li><i class="bi bi-check-lg"></i>Gestion d’équipe</li>
-          <li><i class="bi bi-check-lg"></i>Tableau de bord avancé</li>
-          <li><i class="bi bi-check-lg"></i>Recrutement rapide</li>
-        </ul>
-      </p>
-      <a href="freelances.html">Choisir ce plan</a>
-    </div>
-   </div>
- </div>
-<!-- FAQ en accordion bootstrap -->
- <div class="haut"><h2>FAQ</h2></div>
- <div class="container my-5">
- <div class="accordion" id="faqAccordion">   
-    <div class="accordion-item">           
-      <h2 class="accordion-header" id="q1">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
-          Qu'est-ce que cette plateforme ?
-        </button>
-      </h2>
-      <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          C'est une plateforme qui met en relation des freelances qualifiés et des 
-          entreprises ou particuliers pour des missions dans différents domaines (design, développement, marketing, etc.).
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q2">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
-          Comment créer un compte ?
-        </button>
-      </h2>
-      <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Il suffit de cliquer sur "S'inscrire", de remplir tes informations (nom, email, mot de passe) et de valider ton compte.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q3">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
-          Est-ce que l'inscription est gratuite ?
-        </button>
-      </h2>
-      <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Oui, l'inscription est 100% gratuite pour les freelances et les clients.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q4">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
-          Comment trouver un freelance ?
-        </button>
-      </h2>
-      <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Tu peux utiliser la barre de recherche ou filtrer par compétence, prix, ou expérience pour trouver le profil idéal.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q5">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
-          Comment contacter un freelance ?
-        </button>
-      </h2>
-      <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Clique sur son profil et utilise le bouton "Contacter" ou envoie directement une demande de mission.
-        </div>
-      </div>
-    </div>
-</div> 
- </div>
- <footer>
-      <!-- colonne de bootstrap issu de la documentation -->
-      <div class="container text-center">
-        <div class="row ">
-          <div class="col">
-             <ul id="lo">
-              <li><img src="Image/logo.jpeg"width="90px" height="90px" id="logo" alt=""></li>
-             <li><h3>AfriTalent</h3></li>
-             </ul>
+  <!-- FAQ en accordion bootstrap -->
+  <div class="haut">
+    <h2>FAQ</h2>
+  </div>
+  <div class="container my-5">
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1"
+            aria-expanded="false" aria-controls="a1">
+            Qu'est-ce que cette plateforme ?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            C'est une plateforme qui met en relation des freelances qualifiés et des
+            entreprises ou particuliers pour des missions dans différents domaines (design, développement, marketing,
+            etc.).
           </div>
-         <div class="col"> 
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2"
+            aria-expanded="false" aria-controls="a2">
+            Comment créer un compte ?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Il suffit de cliquer sur "S'inscrire", de remplir tes informations (nom, email, mot de passe) et de
+            valider ton compte.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3"
+            aria-expanded="false" aria-controls="a3">
+            Est-ce que l'inscription est gratuite ?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Oui, l'inscription est 100% gratuite pour les freelances et les clients.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4"
+            aria-expanded="false" aria-controls="a4">
+            Comment trouver un freelance ?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Tu peux utiliser la barre de recherche ou filtrer par compétence, prix, ou expérience pour trouver le
+            profil idéal.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5"
+            aria-expanded="false" aria-controls="a5">
+            Comment contacter un freelance ?
+          </button>
+        </h2>
+        <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Clique sur son profil et utilise le bouton "Contacter" ou envoie directement une demande de mission.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul id="lo">
+            <li>
+              <img src="Image/logo.jpeg" class="logo" alt="logo">
+            </li>
+            <li>
+              <h3>AfriTalent</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
           <h2>Trouvez le freelance idéal pour votre projet</h2>
-          <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>                 <!-- 1:Afritalent + description courte -->  
-          </div>
-          <div class="col"> 
-            <h2>Liens utiles</h2>                 <!-- 2:  Liens utiles  -->
-            <ul>
-              <li><a href="tarifs.html">FAQ</a></li>
-              <li><a href="freelances.html">Freelances</a></li>
-            </ul>
-          </div>
-          <div class="col">                  <!--3:  Ressources  -->  
-            <h2>Ressources</h2>
-            <ul>
-              <li><a href="https://www.youtube.com">Tutoriel</a></li>
-              <li><a href="https://www.google.com">Documentation</a></li>
-              <li><a href="contact.html">Continuer</a></li>
-            </ul>
-          </div>
-          <div class="col"> 
-            <h2>Contact</h2>                  <!-- 4:  Contact  -->
-           <ul>                    <!--  logo des app via bootstrap -->
-              <li><a href="https://wa.me/221710073201"target="_blank">
+          <p>
+            Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Liens utiles</h2>
+          <ul>
+            <li><a href="tarifs.html">FAQ</a></li>
+            <li><a href="freelances.html">Freelances</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Ressources</h2>
+          <ul>
+            <li><a href="https://www.youtube.com">Tutoriel</a></li>
+            <li><a href="https://www.google.com">Documentation</a></li>
+            <li><a href="contact.html">Continuer</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="https://wa.me/221710073201" target="_blank">
                 <i class="bi bi-whatsapp"></i>
-              </a></li>                      
-              <li><a href="https://www.twitter.com"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank">
                 <i class="bi bi-twitter"></i>
-              </a></li>
-              <li><a href="https://www.instagram.com/maureen.linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/maureen.linaelle" target="_blank">
                 <i class="bi bi-instagram"></i>
-              </a></li>
-              <li><a href="https://www.tiktok.com/@maureen_linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@maureen_linaelle" target="_blank">
                 <i class="bi bi-tiktok"></i>
-              </a></li>
-            </ul> 
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="copyright">
-      </div>
-     </footer>
-     <!-- bouton back to top -->
-    <button id="back-to-top">
-      <a href="#plan"><i class="bi bi-arrow-up"></i></a>
-     </button>
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-    <!-- Votre script JavaScript --> 
-    <script src="js/main.js"></script>
+    </div>
+    <div id="copyright">
+    </div>
+  </footer>
+  <!-- bouton back to top -->
+  <a href="#plan" id="back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,361 +1,383 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent — Accueil</title> 
 
-    <!-- Bootstrap 5 via CDN : feuille de style --> 
-    <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Bootstrap Icons - CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Votre feuille de style personnelle --> 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — Accueil</title>
+
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons - CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
-   
-    <!-- Le contenu de la page sera ajoute ici -->
-     <!-- navigation bootstrap commune a toutes les pages -->
- <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-     <div class="container-fluid">
-        <a class="navbar-brand">
-        <img src="Image/logo.jpeg" width="50px" height="50px" id="logo">
-            AfriTalent</a>
-         <!-- Bouton Toggle -->
-         <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
-            <i class="bi bi-sun-fill"></i>
-         </button>
-         <button class="navbar-toggler" type="button" 
-         data-bs-toggle="collapse" 
-         data-bs-target="#navmenu" 
-         aria-controls="navMenu" 
-         aria-expanded="false" 
-         aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="freelances.html">Freelance</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="tarifs.html">Tarifs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">A propos</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link " href="#témoignages">blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="contact.html">Contact</a>
-        </li>
-      </ul>
-       
+
+<body>
+
+  <!-- Le contenu de la page sera ajoute ici -->
+  <!-- navigation bootstrap commune a toutes les pages -->
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="Image/logo.jpeg" alt="logos" class="logo">
+        AfriTalent</a>
+      <!-- Bouton Toggle -->
+      <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="freelances.html">Freelance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="tarifs.html">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#témoignages">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
     </div>
-  </div>
-</nav>
-<section id="hero">
+  </nav>
+  <section id="hero">
     <h1>Bienvenue sur AfriTalent</h1>
-      <h3>Là où les talents africains rencontrent les projets</h3>
-      <ul id="lien">
-        <li><a href="contact.html">Je suis freelance</a></li>
-        <li><a href="freelances.html">Je cherche un freelance</a></li>
-      </ul>
-      <div class="container text-center">
-        <div class="row">
-           <div class="col-12 col-md-6 col-lg-4 counter-container">
-              <i class="bi bi-people-fill"></i>
-               <h3 class="count" data-target="1500">0</h3>
-              <p> Freelances</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 counter-container">
-              <i class="bi bi-person-fill-check"></i>
-               <h3 class="count" data-target="800">0</h3>
-              <p>Clients</p>
-           </div>
-            <div class="col-12 col-md-6 col-lg-4 counter-container">
-              <i class="bi bi-bar-chart-fill"></i>
-               <h3 class="count" data-target="300">0</h3>
-              <p>Projets</p>
-            </div>
-          </div>
-      </div>      
-</section> 
-    <section id="fonction">
-        <!-- comment ca marche -->
-         <div class="haut"><h2>COMMENT ÇA MARCHE?</h2></div>
-              <!-- <h1 class="text-center mb-4">Bento Grid Layout</h1> -->
-                  <!-- Large item -->
-                   <div id="bento">
-                      <div class="bento-item bento-tall " id="tall">
-                        <i class="bi bi-search"></i>
-                        <h3>1-Recherche sur le site</h3>
-                        <p>L’entreprise ou le particulier utilise la barre de recherche ou les catégories
-                          du site pour trouver des freelances selon leurs compétences (développement web, design, rédaction, etc.)</p>
-                      </div>
-                  <!-- Medium item -->
-                    <div class="bento-item ">
-                       <i class="bi bi-chat-dots"></i>
-                          <h3>2-Consultation des profils</h3>
-                          <p>
-                            Le client visite les profils des freelances, regarde leurs compétences, leurs projets réalisés, leurs avis et leurs tarifs.
-                          </p>
-                    </div>
-                    <div class="bento-item ">
-                     <i class="bi bi-person-fill-add"></i>
-                            <h3>3-Prise de contact</h3>
-                            <p>Le client envoie un message ou une demande de devis au freelance pour expliquer son projet et discuter des détails.</p>  
-                    </div>
-                    <div class="bento-item" id="long">
-                       <i class="bi bi-check-circle"></i>
-                            <h3>4-Validation de la mission</h3>
-                            <p>Après accord sur le prix et le délai, le client confirme la mission sur la plateforme et le freelance commence le travail.</p>
-                    </div>
-                </div>
-     </section>
-     <section id="services">
-        <!-- categories de services -->
-         <div class="haut"><h2> CATÉGORIES DE SERVICES</h2></div>
-         <div class="container">
-          <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <div><i class="bi bi-laptop"></i></div>
-                  <h3>Développement web</h3>
-                  <p>Le développement web englobe la création, la conception et la maintenance de sites et d'applications internet. 
-                  Il se divise en front-end (interface utilisateur avec HTML, CSS, JavaScript) et back-end (serveurs, bases de données, logique).
-                  <br>
-                  Nombres de freelances: 2
-                  </p>
-                </div>
-              </div>
-            </div>
-         <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <div><i class="bi bi-palette-fill"></i></div>
-                <h3>Design UI/UX </h3>
-                <p>Le design UI/UX (User Interface/User Experience) 
-                  consiste à créer des interfaces numériques intuitives, esthétiques et fonctionnelles
-                  <br>
-                  Nombres de freelances: 1
-                </p>
-              </div>
-            </div>
-          </div>
+    <h2>Là où les talents africains rencontrent les projets</h2>
+    <ul id="lien">
+      <li><a href="contact.html">Je suis freelance</a></li>
+      <li><a href="freelances.html">Je cherche un freelance</a></li>
+    </ul>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 counter-container">
+          <i class="bi bi-people-fill"></i>
+          <h3 class="count" data-target="1500">0</h3>
+          <p> Freelances</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 counter-container">
+          <i class="bi bi-person-fill-check"></i>
+          <h3 class="count" data-target="800">0</h3>
+          <p>Clients</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 counter-container">
+          <i class="bi bi-bar-chart-fill"></i>
+          <h3 class="count" data-target="300">0</h3>
+          <p>Projets</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fonction">
+    <!-- comment ca marche -->
+    <div class="haut">
+      <h2>COMMENT ÇA MARCHE?</h2>
+    </div>
+    <!-- <h1 class="text-center mb-4">Bento Grid Layout</h1> -->
+    <!-- Large item -->
+    <div id="bento">
+      <div class="bento-item bento-tall " id="tall">
+        <i class="bi bi-search"></i>
+        <h3>1-Recherche sur le site</h3>
+        <p>L’entreprise ou le particulier utilise la barre de recherche ou les catégories
+          du site pour trouver des freelances selon leurs compétences (développement web, design, rédaction, etc.)</p>
+      </div>
+      <!-- Medium item -->
+      <div class="bento-item ">
+        <i class="bi bi-chat-dots"></i>
+        <h3>2-Consultation des profils</h3>
+        <p>
+          Le client visite les profils des freelances, regarde leurs compétences, leurs projets réalisés, leurs avis et
+          leurs tarifs.
+        </p>
+      </div>
+      <div class="bento-item ">
+        <i class="bi bi-person-fill-add"></i>
+        <h3>3-Prise de contact</h3>
+        <p>Le client envoie un message ou une demande de devis au freelance pour expliquer son projet et discuter des
+          détails.</p>
+      </div>
+      <div class="bento-item" id="long">
+        <i class="bi bi-check-circle"></i>
+        <h3>4-Validation de la mission</h3>
+        <p>Après accord sur le prix et le délai, le client confirme la mission sur la plateforme et le freelance
+          commence le travail.</p>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <!-- categories de services -->
+    <div class="haut">
+      <h2> CATÉGORIES DE SERVICES</h2>
+    </div>
+    <div class="container">
+      <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <div class="card-body">
-               <div><i class="bi bi-app"></i></div>
-                <h3>Application web</h3>
-                <p>Une application web est un logiciel applicatif hébergé sur un serveur 
-                  et accessible via un navigateur internet (Chrome, Safari, Firefox), sans nécessiter d'installation locale
-                  <br>
-                  Nombres de freelances: 3
-                </p>
-              </div>
+              <div><i class="bi bi-laptop"></i></div>
+              <h3>Développement web</h3>
+              <p>Le développement web englobe la création, la conception et la maintenance de sites et d'applications
+                internet.
+                Il se divise en front-end (interface utilisateur avec HTML, CSS, JavaScript) et back-end (serveurs,
+                bases de données, logique).
+                <br>
+                Nombres de freelances: 2
+              </p>
             </div>
           </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <div><i class="bi bi-camera-video"></i></div>
-                    <h3>Création de vidéos</h3>
-                    <p>La création vidéo est le processus complet de production de contenu audiovisuel, 
-                      allant de la conception (pré-production) au tournage, jusqu'au montage final (post-production)
-                      <br>
-                      Nombres de freelances: 1
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <div><i class="bi bi-broadcast-pin"></i></div>
-                  <h3>Gestion des médias sociaux</h3>
-                  <p>
-                    La gestion des médias sociaux (social media management) consiste à planifier, créer, 
-                    publier et analyser du contenu sur les réseaux sociaux pour développer la notoriété, 
-                    l'engagement et la réputation d'une entreprise.
-                    <br>
-                    Nombres de freelances: 1
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <div><i class="bi bi-pencil-square"></i></div>
-                  <h3>Rédaction web</h3>
-                  <p>La rédaction web est l'art de créer des contenus textuels destinés
-                    à être publiés sur Internet (articles de blog, pages web, fiches produits, newsletters, etc.)
-                  <br>
-                  Nombres de freelances: 1
-                  </p>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-     </section>
-     <section id="tem">
-        <!-- témoignages -->
-        <div  class="haut"> <h2>TEMOIGNAGES</h2> </div>
-         <!-- bootstrap documentation temoignages presentés en Carroussel bootstrap -->
-        <div id="témoignages"  class="carousel slide" data-bs-ride="carousel">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-                <div class="card">
-                    <img src="Image/tem1.jpeg" alt="" class="card-img-top">
-                    <div class="card-body">
-                      <h3>Entreprise: TechVision
-                      <br>
-                      Freelance: Aminata Diop (Front-End Developer)
-                  </h3>
-                    <p>Nous avions besoin d’un site web moderne pour notre entreprise et
-                      le travail réalisé a dépassé nos attentes. Le projet a été livré rapidement et avec beaucoup de professionnalisme.</p>
-                      <br>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i> 
-                      <i class="bi bi-star"></i>
-                    </div>
-                  </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <div class="card">
-                    <img src="Image/tem2.jpeg" alt="" class="card-img-top">
-                    <div class="card-body">
-                      <h3>Entreprise : Digital Market Group
-                      <br>
-                      Freelance : David Mensah (Full-Stack Developer)
-                    </h3>
-                    <p>La collaboration a été très fluide. Notre application web fonctionne
-                                parfaitement et nos clients sont très satisfaits.</p>
-                    <br>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i> 
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                  <div class="card">
-                    <img src="Image/tem3.jpeg" alt="" class="card-img-top">
-                    <div class="card-body">
-                      <h3>Entreprise : GreenLife Startup
-                      <br>
-                      Freelance : Fatou Ndiaye (Community Manager)
-                    </h3>
-                    <p>Grâce à cette freelance, notre visibilité en ligne a beaucoup augmenté.
-                    Les réseaux sociaux de notre entreprise sont maintenant très actifs.</p>
-                    <br>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i> 
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div><i class="bi bi-palette-fill"></i></div>
+              <h3>Design UI/UX </h3>
+              <p>Le design UI/UX (User Interface/User Experience)
+                consiste à créer des interfaces numériques intuitives, esthétiques et fonctionnelles
+                <br>
+                Nombres de freelances: 1
+              </p>
+            </div>
+          </div>
         </div>
-     </section>
-     <section id="cta">
-        <!-- appel a l'action : cta -->
-         <div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div><i class="bi bi-app"></i></div>
+              <h3>Application web</h3>
+              <p>Une application web est un logiciel applicatif hébergé sur un serveur
+                et accessible via un navigateur internet (Chrome, Safari, Firefox), sans nécessiter d'installation
+                locale
+                <br>
+                Nombres de freelances: 3
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div><i class="bi bi-camera-video"></i></div>
+              <h3>Création de vidéos</h3>
+              <p>La création vidéo est le processus complet de production de contenu audiovisuel,
+                allant de la conception (pré-production) au tournage, jusqu'au montage final (post-production)
+                <br>
+                Nombres de freelances: 1
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div><i class="bi bi-broadcast-pin"></i></div>
+              <h3>Gestion des médias sociaux</h3>
+              <p>
+                La gestion des médias sociaux (social media management) consiste à planifier, créer,
+                publier et analyser du contenu sur les réseaux sociaux pour développer la notoriété,
+                l'engagement et la réputation d'une entreprise.
+                <br>
+                Nombres de freelances: 1
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div><i class="bi bi-pencil-square"></i></div>
+              <h3>Rédaction web</h3>
+              <p>La rédaction web est l'art de créer des contenus textuels destinés
+                à être publiés sur Internet (articles de blog, pages web, fiches produits, newsletters, etc.)
+                <br>
+                Nombres de freelances: 1
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tem">
+    <!-- témoignages -->
+    <div class="haut">
+      <h2>TEMOIGNAGES</h2>
+    </div>
+    <!-- bootstrap documentation temoignages presentés en Carroussel bootstrap -->
+    <div id="témoignages" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="card">
+              <img src="Image/tem1.jpeg" alt="tem" class="card-img-top">
+              <div class="card-body">
+                <h3>Entreprise: TechVision
+                  <br>
+                  Freelance: Aminata Diop (Front-End Developer)
+                </h3>
+                <p>Nous avions besoin d’un site web moderne pour notre entreprise et
+                  le travail réalisé a dépassé nos attentes. Le projet a été livré rapidement et avec beaucoup de
+                  professionnalisme.</p>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="card">
+              <img src="Image/tem2.jpeg" alt="tem" class="card-img-top">
+              <div class="card-body">
+                <h3>Entreprise : Digital Market Group
+                  <br>
+                  Freelance : David Mensah (Full-Stack Developer)
+                </h3>
+                <p>La collaboration a été très fluide. Notre application web fonctionne
+                  parfaitement et nos clients sont très satisfaits.</p>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="card">
+              <img src="Image/tem3.jpeg" alt="tem" class="card-img-top">
+              <div class="card-body">
+                <h3>Entreprise : GreenLife Startup
+                  <br>
+                  Freelance : Fatou Ndiaye (Community Manager)
+                </h3>
+                <p>Grâce à cette freelance, notre visibilité en ligne a beaucoup augmenté.
+                  Les réseaux sociaux de notre entreprise sont maintenant très actifs.</p>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="cta">
+    <!-- appel a l'action : cta -->
+    <div>
+      <h2>Trouvez le freelance idéal pour votre projet</h2>
+      <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>
+      <a href="contact.html">S'inscrire maintenant</a>
+    </div>
+  </section>
+  <footer>
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul id="lo">
+            <li>
+              <img src="Image/logo.jpeg" class="logo" alt="logo">
+            </li>
+            <li>
+              <h3>AfriTalent</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
           <h2>Trouvez le freelance idéal pour votre projet</h2>
-          <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>
-          <a href="contact.html">S'inscrire maintenant</a>
-         </div>
-     </section>
-     <footer>
-      <!-- colonne de bootstrap issu de la documentation -->
-      <div class="container text-center">
-        <div class="row ">
-          <div class="col">
-             <ul id="lo">
-              <li><img src="Image/logo.jpeg"width="90px" height="90px" id="logo" alt=""></li>
-             <li><h3>AfriTalent</h3></li>
-             </ul>
-          </div>
-         <div class="col"> 
-          <h2>Trouvez le freelance idéal pour votre projet</h2>
-          <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>                 <!-- 1:Afritalent + description courte -->  
-          </div>
-          <div class="col"> 
-            <h2>Liens utiles</h2>                 <!-- 2:  Liens utiles  -->
-            <ul>
-              <li><a href="tarifs.html">FAQ</a></li>
-              <li><a href="freelances.html">Freelances</a></li>
-            </ul>
-          </div>
-          <div class="col">                  <!--3:  Ressources  -->  
-            <h2>Ressources</h2>
-            <ul>
-              <li><a href="https://www.youtube.com">Tutoriel</a></li>
-              <li><a href="https://www.google.com">Documentation</a></li>
-              <li><a href="contact.html">Continuer</a></li>
-            </ul>
-          </div>
-          <div class="col"> 
-            <h2>Contact</h2>                  <!-- 4:  Contact  -->
-           <ul>                    <!--  logo des app via bootstrap -->
-              <li><a href="https://wa.me/221710073201"target="_blank">
+          <p>
+            Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Liens utiles</h2>
+          <ul>
+            <li><a href="tarifs.html">FAQ</a></li>
+            <li><a href="freelances.html">Freelances</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Ressources</h2>
+          <ul>
+            <li><a href="https://www.youtube.com">Tutoriel</a></li>
+            <li><a href="https://www.google.com">Documentation</a></li>
+            <li><a href="contact.html">Continuer</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="https://wa.me/221710073201" target="_blank">
                 <i class="bi bi-whatsapp"></i>
-              </a></li>                      
-              <li><a href="https://www.twitter.com"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank">
                 <i class="bi bi-twitter"></i>
-              </a></li>
-              <li><a href="https://www.instagram.com/maureen.linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/maureen.linaelle" target="_blank">
                 <i class="bi bi-instagram"></i>
-              </a></li>
-              <li><a href="https://www.tiktok.com/@maureen_linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@maureen_linaelle" target="_blank">
                 <i class="bi bi-tiktok"></i>
-              </a></li>
-            </ul> 
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="copyright">
-      </div>
-     </footer>
-   <!-- bouton back to top -->
-    <button id="back-to-top">
-      <a href="#hero"><i class="bi bi-arrow-up"></i></a>
-     </button>
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-    <!-- Votre script JavaScript --> 
-    <script src="js/main.js"></script>
-</body> 
+    </div>
+    <div id="copyright">
+    </div>
+  </footer>
+  <!-- bouton back to top -->
+  <a href="#hero" id="back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,193 +1,203 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent — contact</title> 
 
-    <!-- Bootstrap 5 via CDN : feuille de style --> 
-    <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Bootstrap Icons - CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Votre feuille de style personnelle --> 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — contact</title>
+
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons - CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="form"> 
-   
-    <!-- Le contenu de la page sera ajoute ici -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-     <div class="container-fluid">
-        <a class="navbar-brand">
-        <img src="Image/logo.jpeg" width="50px" height="50px" id="logo">
-            AfriTalent</a>
-         <!-- Bouton Toggle -->
-         <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
-            <i class="bi bi-sun-fill"></i>
-         </button>
-         <button class="navbar-toggler" type="button" 
-         data-bs-toggle="collapse" 
-         data-bs-target="#navmenu" 
-         aria-controls="navMenu" 
-         aria-expanded="false" 
-         aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
+<body class="form">
 
-        <li class="nav-item">
-          <a class="nav-link " href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="freelances.html">Freelance</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="tarifs.html">Tarifs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">A propos</a>
-        </li>
+  <!-- Le contenu de la page sera ajoute ici -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="Image/logo.jpeg" alt="logos" class="logo">
+        AfriTalent</a>
+      <!-- Bouton Toggle -->
+      <button id="theme-toggle" class="theme-btn" aria-label="Activer le mode sombre">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+
           <li class="nav-item">
-          <a class="nav-link " href="index.html#témoignages">blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contact.html">Contact</a>
-        </li> 
-      </ul>
+            <a class="nav-link " href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="freelances.html">Freelance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="tarifs.html">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="index.html#témoignages">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav> 
+  </nav>
   <div class="glass" id="top">
     <div class="container">
-      <div ><h3> Complétez toutes les informations ci-dessous :</h3></div>
+      <div>
+        <h3> Complétez toutes les informations ci-dessous :</h3>
+      </div>
       <form id="formulaire">
-            <div>
-              <label for="nom">Nom</label>
-              <input type="text" id="nom" name="nom">
-              <span class="error" id="nomError"></span>
-          </div>
-          <div>
-              <label for="prenom">Prénom</label>
-              <input type="text" id="prenom" name="prenom">
-              <span class="error" id="prenomError"></span>
-          </div>
-          <div>
-              <label for="mail">E-mail</label>
-              <input type="email" id="email" name="email">
-              <span class="error" id="emailError"></span>
-          </div>
-          <div>
-              <label for="">Téléphone</label>
-              <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00" arial-live="polite">
-              <span class="error" id="phoneError"></span>
-          </div>
-          <div><label for="age">Age</label>
-              <input type="number" id="age" name="age" min="1" max="120">
-              <span class="error" id="ageError"></span>
-          </div>
-          <div><label for="address">Adresse</label>
-              <input type="address" id="address" name="address">
-              <span class="error" id="addressError"></span>
-          </div>
-          <div>
-            <label for="subject">Sujet</label>
-            <select name="sujet" id="sujet">
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom">
+          <span class="error" id="nomError"></span>
+        </div>
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom">
+          <span class="error" id="prenomError"></span>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+          <span class="error" id="emailError"></span>
+        </div>
+        <div>
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00">
+          <span class="error" id="phoneError"></span>
+        </div>
+        <div><label for="age">Age</label>
+          <input type="number" id="age" name="age" min="1" max="120">
+          <span class="error" id="ageError"></span>
+        </div>
+        <div><label for="address">Adresse</label>
+          <input type="text" id="address" name="address">
+          <span class="error" id="addressError"></span>
+        </div>
+        <div>
+          <label for="sujet">Sujet</label>
+          <select name="sujet" id="sujet">
             <option value="services">Demande de services</option>
             <option value="recrutement">Recrutement de freelances</option>
             <option value="proposition">Proposition de projet(s)</option>
             <option value="renseignement">Demande d'informations</option>
             <option value="autres">Autres</option>
-            </select>
-            <span></span>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-            <span class="error" id="messageError"></span>
-          </div> 
-          <div>
-              <button type="submit">valider</button>
-          </div>
-        </form>
+          </select>
+          <span></span>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+        <div>
+          <button type="submit">valider</button>
+        </div>
+      </form>
+    </div>
+    <div id="con">
+      <h3>Vous pouvez nous contactez via :</h3>
+      <div id="contact">
+        <ul>
+          <li><a href="mailto:maureenzoungrana@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i>
+              afritalent@gmail.com</a></li>
+          <li><a href="tel:+221710073201"><i class="bi bi-telephone-fill"></i> +221 77 005 31 02</a></li>
+        </ul>
       </div>
-  <div id="con"><h3>Vous pouvez nous contactez via :</h3>
-    <div id="contact">
-      <ul>
-        <li><a href="mailto:maureenzoungrana@gmail.com"target="_blank"><i class="bi bi-envelope-at-fill"></i> afritalent@gmail.com</a></li>
-        <li><a href="tel:+221710073201"><i class="bi bi-telephone-fill"></i> +221 77 005 31 02</a></li>
-      </ul>
+      <div id="loc">
+        <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed">
+        </iframe>
+      </div>
     </div>
-    <div id="loc">
-      <iframe src="https://www.google.com/maps?q=MGHW%2B75R%20Dakar&output=embed" frameborder="0">
-    </iframe>  
-    </div>
-  </div>
   </div>
   <footer>
-      <!-- colonne de bootstrap issu de la documentation -->
-      <div class="container text-center">
-        <div class="row ">
-          <div class="col">
-             <ul id="lo">
-              <li><img src="Image/logo.jpeg"width="90px" height="90px" id="logo" alt=""></li>
-             <li><h3>AfriTalent</h3></li>
-             </ul>
-          </div>
-         <div class="col"> 
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul id="lo">
+            <li>
+              <img src="Image/logo.jpeg" class="logo" alt="logo">
+            </li>
+            <li>
+              <h3>AfriTalent</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
           <h2>Trouvez le freelance idéal pour votre projet</h2>
-          <p>Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains</p>                 <!-- 1:Afritalent + description courte -->  
-          </div>
-          <div class="col"> 
-            <h2>Liens utiles</h2>                 <!-- 2:  Liens utiles  -->
-            <ul>
-              <li><a href="tarifs.html">FAQ</a></li>
-              <li><a href="freelances.html">Freelances</a></li>
-            </ul>
-          </div>
-          <div class="col">                  <!--3:  Ressources  -->  
-            <h2>Ressources</h2>
-            <ul>
-              <li><a href="https://www.youtube.com">Tutoriel</a></li>
-              <li><a href="https://www.google.com">Documentation</a></li>
-              <li><a href="contact.html">Continuer</a></li>
-            </ul>
-          </div>
-          <div class="col"> 
-            <h2>Contact</h2>                  <!-- 4:  Contact  -->
-           <ul>                    <!--  logo des app via bootstrap -->
-              <li><a href="https://wa.me/221710073201"target="_blank">
+          <p>
+            Rejoignez Afritalent et connectez-vous avec les meilleurs talents africains
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Liens utiles</h2>
+          <ul>
+            <li><a href="tarifs.html">FAQ</a></li>
+            <li><a href="freelances.html">Freelances</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Ressources</h2>
+          <ul>
+            <li><a href="https://www.youtube.com">Tutoriel</a></li>
+            <li><a href="https://www.google.com">Documentation</a></li>
+            <li><a href="contact.html">Continuer</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="https://wa.me/221710073201" target="_blank">
                 <i class="bi bi-whatsapp"></i>
-              </a></li>                      
-              <li><a href="https://www.twitter.com"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank">
                 <i class="bi bi-twitter"></i>
-              </a></li>
-              <li><a href="https://www.instagram.com/maureen.linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/maureen.linaelle" target="_blank">
                 <i class="bi bi-instagram"></i>
-              </a></li>
-              <li><a href="https://www.tiktok.com/@maureen_linaelle"target="_blank">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@maureen_linaelle" target="_blank">
                 <i class="bi bi-tiktok"></i>
-              </a></li>
-            </ul> 
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="copyright">
-      </div>
-     </footer>
-     <!-- bouton back to top -->
-    <button id="back-to-top">
-      <a href="#top"><i class="bi bi-arrow-up"></i></a>
-     </button>
-    
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-    <!-- Votre script JavaScript --> 
-    <script src="js/main.js"></script>
-</body>
-</html>
+    </div>
+    <div id="copyright">
+    </div>
+  </footer>
+  <!-- bouton back to top -->
+  <a href="#top" id="back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
