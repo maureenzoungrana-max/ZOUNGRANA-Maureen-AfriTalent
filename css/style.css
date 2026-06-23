@@ -216,7 +216,7 @@ body.dark-mode .bg-dark.scrolled {
     color: white;
     font-family: var(--font-title);
     text-align: center;
-    /* margin-top: 20px; */
+
 }
 
 /* bouton cta */
@@ -226,6 +226,7 @@ body.dark-mode .bg-dark.scrolled {
     color: var(--primary-color);
     text-align: center;
     height: 20vh;
+    margin-bottom: 55px;
 
 }
 
@@ -678,6 +679,7 @@ iframe {
     margin-top: 40px;
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    height: 55vh;
 
     /*rend le mouvement plus fuid avec le transform scale*/
     div {
@@ -868,6 +870,22 @@ iframe {
     }
 }
 
+/*About chiffres clé*/
+#key {
+    height: fit-content;
+
+    .container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* centre le texte */
+        gap: 45px;
+
+    }
+
+}
+
 /* Media Queries pour les appareils mobiles */
 @media screen and (min-width: 375px) and (max-width: 767px) {
     #theme-toggle {
@@ -903,6 +921,13 @@ iframe {
 
     #cta {
         height: fit-content;
+    }
+
+    footer {
+
+        ul {
+            margin-right: 25px;
+        }
     }
 
     /* section comment ca marche */
@@ -941,6 +966,20 @@ iframe {
         object-fit: cover;
     }
 
+    #key {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* centre horizontalement */
+            text-align: center;
+            /* centre le texte */
+            gap: 45px;
+
+        }
+
+    }
+
     /* barre de filtrage */
     #barre {
         ul {
@@ -968,6 +1007,11 @@ iframe {
     #plan .col {
         font-size: 14px;
         width: 90%;
+        height: 45vh;
+    }
+
+    #plan #pro {
+        height: 50vh;
     }
 
     .card {
@@ -1111,6 +1155,24 @@ iframe {
     #plan .col {
         font-size: 16px;
         /* width: 250px; */
+    }
+
+    /* tarifs */
+    #plan {
+        display: list-item;
+
+    }
+
+    #plan .col {
+        margin: 20px auto;
+        height: 37vh;
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    #plan #pro {
+        height: 45vh;
+        font-size: 20px;
     }
 
     /* formulaire */
